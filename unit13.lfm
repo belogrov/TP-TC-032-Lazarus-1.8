@@ -1,0 +1,49 @@
+object Form12: TForm12
+  Left = 402
+  Height = 169
+  Top = 187
+  Width = 582
+  BorderStyle = bsDialog
+  Caption = 'Группа рабочей среды по ТР ТС 032-2013'
+  ClientHeight = 169
+  ClientWidth = 582
+  Position = poScreenCenter
+  LCLVersion = '1.8.2.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 104
+    Top = 0
+    Width = 582
+    Align = alTop
+    Caption = 'Группа рабочей среды по ТР ТС 032/2013'
+    ClientHeight = 84
+    ClientWidth = 578
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 0
+      Height = 45
+      Top = 0
+      Width = 578
+      Align = alTop
+      Caption = 'ГРУППА 1: рабочие среды, состоящие из воспламеняющихся, окисляющихся, горючих,'#13#10'взрывчатых, токсичных и высокотоксичных газов, жидкостей и паров в однофазном состоянии, а также их'#13#10'смесей.'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 0
+      Height = 15
+      Top = 56
+      Width = 332
+      Caption = 'ГРУППА 2: рабочие среды, которые не отнесены к группе 1.'
+      ParentColor = False
+    end
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Ага'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end

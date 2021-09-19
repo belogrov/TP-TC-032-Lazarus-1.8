@@ -1,0 +1,367 @@
+object Form14: TForm14
+  Left = 337
+  Height = 774
+  Top = 14
+  Width = 816
+  Caption = 'ГОСТ 12.1.007-76 "ВРЕДНЫЕ ВЕЩЕСТВА. КЛАССИФИКАЦИЯ И ОБЩИЕ ТРЕБОВАНИЯ БЕЗОПАСНОСТИ"'
+  ClientHeight = 774
+  ClientWidth = 816
+  Position = poScreenCenter
+  LCLVersion = '1.8.2.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 184
+    Top = 0
+    Width = 816
+    Align = alTop
+    AutoFillColumns = True
+    FixedCols = 4
+    FixedRows = 0
+    RowCount = 8
+    TabOrder = 0
+    ColWidths = (
+      535
+      64
+      64
+      67
+      82
+    )
+    Cells = (
+      39
+      0
+      1
+      'Предельно допустимая концентрация (ПДК) вредных веществ в воздухе рабочей зоны, мг/м3'
+      0
+      2
+      'Средняя смертельная доза при введении в желудок, мг/кг'
+      0
+      3
+      'Средняя смертельная доза при нанесении на кожу, мг/кг'
+      0
+      4
+      'Средняя смертельная концентрация в воздухе, мг/м3'
+      0
+      5
+      'Коэффициент возможности ингаляционного отравления (КВИО)'
+      0
+      6
+      'Зона острого действия'
+      0
+      7
+      'Зона хронического действия'
+      1
+      0
+      '1-й'
+      1
+      1
+      'Менее 0,1'
+      1
+      2
+      'Менее 15'
+      1
+      3
+      'Менее 100'
+      1
+      4
+      'Менее 500'
+      1
+      5
+      'Более 300'
+      1
+      6
+      'Менее 6,0'
+      1
+      7
+      'Более 10'
+      2
+      0
+      '2-й'
+      2
+      1
+      '0,1-1,0'
+      2
+      2
+      '15-150'
+      2
+      3
+      '100-500'
+      2
+      4
+      '500-5000'
+      2
+      5
+      '300-30'
+      2
+      6
+      '6,0-18,0'
+      2
+      7
+      '10,0-5,0'
+      3
+      0
+      '3-й'
+      3
+      1
+      '1,1-10,0'
+      3
+      2
+      '151-5000'
+      3
+      3
+      '501-2500'
+      3
+      4
+      '5001-50000'
+      3
+      5
+      '29-3'
+      3
+      6
+      '18,1-54,0'
+      3
+      7
+      '4,9-2,5'
+      4
+      0
+      '4-й'
+      4
+      1
+      'Более 10,0'
+      4
+      2
+      'Более 5000'
+      4
+      3
+      'Более 2500'
+      4
+      4
+      'Более 50000'
+      4
+      5
+      'менее 3'
+      4
+      6
+      'Более 54,0'
+      4
+      7
+      'Менее 2,5'
+    )
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = GroupBox7
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = GroupBox7
+    AnchorSideTop.Side = asrBottom
+    Left = 303
+    Height = 32
+    Top = 725
+    Width = 211
+    BorderSpacing.Top = 5
+    Caption = 'Следи за собой, будь осторожен'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 48
+    Top = 184
+    Width = 816
+    Align = alTop
+    Caption = 'Средняя смертельная доза при введении в желудок'
+    ClientHeight = 24
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 812
+      Align = alTop
+      Caption = 'Доза вещества, вызывающая гибель 50 % животных при однократном введении в желудок'
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Height = 48
+    Top = 232
+    Width = 816
+    Align = alTop
+    Caption = 'Средняя смертельная концентрация в воздухе'
+    ClientHeight = 24
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    object Label2: TLabel
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 812
+      Align = alTop
+      Caption = 'Концентрация вещества, вызывающая гибель 50 % животных при двух-четырехчасовом ингаляционном воздействии'
+      ParentColor = False
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 0
+    Height = 48
+    Top = 280
+    Width = 816
+    Align = alTop
+    Caption = 'Средняя смертельная доза при нанесении на кожу'
+    ClientHeight = 24
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    object Label3: TLabel
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 812
+      Align = alTop
+      Caption = 'Доза вещества, вызывающая гибель 50 % животных при однократном нанесении на кожу'
+      ParentColor = False
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 0
+    Height = 70
+    Top = 328
+    Width = 816
+    Align = alTop
+    Caption = 'Коэффициент возможности ингаляционного отравления'
+    ClientHeight = 46
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    object Label4: TLabel
+      Left = 0
+      Height = 38
+      Top = 0
+      Width = 812
+      Align = alTop
+      Caption = 'Отношение максимально достижимой концентрации вредного вещества в воздухе при 20 °С к средней смертельной концентрации вещества для мышей'
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 0
+    Height = 90
+    Top = 398
+    Width = 816
+    Align = alTop
+    Caption = 'Зона острого действия'
+    ClientHeight = 66
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    object Label5: TLabel
+      Left = 0
+      Height = 57
+      Top = 0
+      Width = 812
+      Align = alTop
+      Caption = 'Отношение средней смертельной концентрации вредного вещества к минимальной (пороговой) концентрации, вызывающей изменение биологических показателей на уровне целостного организма, выходящих за пределы приспособительных физиологических реакций'
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 0
+    Height = 105
+    Top = 488
+    Width = 816
+    Align = alTop
+    Caption = 'Зона хронического действия'
+    ClientHeight = 81
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+    object Label10: TLabel
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 812
+      Align = alTop
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 0
+      Height = 1
+      Top = 1
+      Width = 812
+      Align = alTop
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 0
+      Height = 76
+      Top = 2
+      Width = 812
+      Align = alTop
+      Caption = 'Отношение минимальной (пороговой) концентрации, вызывающей изменение биологических показателей на уровне целостного организма, выходящих за пределы приспособительных физиологических реакций, к минимальной (пороговой) концентрации, вызывающей вредное действие в хроническом эксперименте по 4 ч, пять раз в неделю на протяжении не менее четырех месяцев'
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+  object GroupBox7: TGroupBox
+    Left = 0
+    Height = 127
+    Top = 593
+    Width = 816
+    Align = alTop
+    Caption = 'Тест экспозиции'
+    ClientHeight = 103
+    ClientWidth = 812
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    object Label13: TLabel
+      Left = 0
+      Height = 96
+      Top = 0
+      Width = 812
+      Align = alTop
+      AutoSize = False
+      Caption = 'Биологическая ПДК - уровень вредного вещества (или продуктов его превращения) в организме работающего (кровь, моча, выдыхаемый воздух и др.) или уровень биологического ответа (содержание метгемоглобина, активность холинэстеразы и др.) наиболее поражаемой системы организма, при котором непосредственно в процессе воздействия или в отдаленные сроки жизни настоящего и последующего поколений не возникает заболеваний или отклонений в состоянии здоровья, определяемых современными методами исследования'
+      ParentColor = False
+      WordWrap = True
+    end
+  end
+end

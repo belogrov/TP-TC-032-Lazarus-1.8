@@ -1,0 +1,151 @@
+object Form6: TForm6
+  Left = 414
+  Height = 233
+  Top = 227
+  Width = 750
+  BorderStyle = bsDialog
+  Caption = 'Паровые, водогрейные котлы и сосуды с огневым обогревом'
+  ClientHeight = 233
+  ClientWidth = 750
+  OnCreate = FormCreate
+  OnShow = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.8.2.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 160
+    Top = 0
+    Width = 750
+    Align = alTop
+    AutoFillColumns = True
+    ColCount = 4
+    FixedCols = 3
+    FixedRows = 0
+    RowCount = 7
+    TabOrder = 0
+    OnDrawCell = StringGrid1DrawCell
+    ColWidths = (
+      70
+      204
+      204
+      268
+    )
+    Cells = (
+      28
+      0
+      0
+      'Категория'
+      0
+      1
+      '1-я'
+      0
+      2
+      '2-я'
+      0
+      3
+      '3-я'
+      0
+      4
+      '4-я'
+      0
+      5
+      '4-я'
+      0
+      6
+      '4-я'
+      1
+      0
+      'V (м3)'
+      1
+      1
+      'свыше 0,002 до 0,1 включительно'
+      1
+      2
+      'свыше 0,002 до 0,4 включительно'
+      1
+      3
+      'свыше 0,002 до 1 включительно'
+      1
+      4
+      'свыше 0,002 до 0,01 включительно'
+      1
+      5
+      'свыше 0,01 до 1 включительно'
+      1
+      6
+      'свыше 1'
+      2
+      0
+      'P*V (МПа*м3)'
+      2
+      1
+      'до 0,005 включительно'
+      2
+      2
+      'свыше 0,005 до 0,02 включительно'
+      2
+      3
+      'свыше 0,02 до 0,3 включительно'
+      2
+      4
+      'не нормируется'
+      2
+      5
+      'свыше 0,3'
+      2
+      6
+      'не нормируется'
+      3
+      0
+      'P (МПа)'
+      3
+      1
+      'свыше 0,05'
+      3
+      2
+      'свыше 0,05 до 3,2 включительно'
+      3
+      3
+      'свыше 0,05 до 3,2 включительно'
+      3
+      4
+      'свыше 3,2'
+      3
+      5
+      'свыше 0,3'
+      3
+      6
+      'свыше 0,05'
+    )
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Label1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 338
+    Height = 25
+    Top = 191
+    Width = 75
+    BorderSpacing.Top = 5
+    Caption = 'Ага'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 26
+    Top = 160
+    Width = 750
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Характеристики оборудования соответсвуют'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
